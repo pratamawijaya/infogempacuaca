@@ -1,65 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardElevation="2dp">
 
-    <TextView
-        android:id="@+id/scala_gempa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
-        android:textColor="@color/primaryColor"
-        android:textSize="38sp"
-        tools:text="5.2 SR" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/scala_gempa"
-        android:orientation="vertical">
+        android:padding="10dp">
+
+
 
 
         <TextView
-            android:id="@+id/lokasi"
+            android:id="@+id/scala_gempa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
             android:textColor="@color/primaryColor"
-            android:textSize="16sp"
-            tools:text="22 km BaratDaya SOLOKSELATAN-SUMBAR" />
+            android:textSize="38sp"
+            tools:text="5.2 SR" />
 
-        <TextView
-            android:id="@+id/jam_tanggal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/secondaryColorText"
-            tools:text="13-Jun-15 02:54:21 WIB" />
-
-
-        <TextView
-            android:id="@+id/bujur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/secondaryColorText"
-            tools:text="8.72 LS 118.39 BT" />
-
-        <TextView
-            android:id="@+id/kedalaman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/secondaryColorText"
-            tools:text="Kedalaman :  121 Km" />
-
-        <VideoView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0.8dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/secondaryColorText" />
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scala_gempa"
+            android:orientation="vertical">
 
-    </LinearLayout>
-</RelativeLayout>
+
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryColor"
+                android:textSize="16sp"
+                tools:text="22 km BaratDaya SOLOKSELATAN-SUMBAR" />
+
+            <TextView
+                android:id="@+id/jam_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/secondaryColorText"
+                tools:text="13-Jun-15 02:54:21 WIB" />
+
+
+            <TextView
+                android:id="@+id/bujur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/secondaryColorText"
+                tools:text="8.72 LS 118.39 BT" />
+
+            <TextView
+                android:id="@+id/kedalaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/secondaryColorText"
+                tools:text="Kedalaman :  121 Km" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
